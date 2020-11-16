@@ -1,1 +1,26 @@
-.wp-block-cgb-block-cgb{color:#292929;background:#bada55;border:0.2rem solid #292929;padding:2rem}
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+body div .block-editor-block-list__layout > div[data-type^="glorify-blocks"] {
+  max-width: none !important; }
+  body div .block-editor-block-list__layout > div[data-type^="glorify-blocks"] .wp-block {
+    max-width: none !important; }
+
+body div .block-editor-block-list__layout > div[data-type="glorify-blocks/front-hero"] .frontHero h1 {
+  position: absolute !important;
+  font-weight: 800;
+  font-size: 42px;
+  line-height: 58px;
+  letter-spacing: -0.21px;
+  color: #ffffff;
+  margin-left: 10%;
+  margin-top: -21%; }

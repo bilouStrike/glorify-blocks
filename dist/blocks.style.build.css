@@ -1,1 +1,33 @@
-.wp-block-cgb-block-cgb{color:#292929;background:#ff4500;border:0.2rem solid #292929;padding:2rem}
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+.glorify-container {
+  max-width: 1140px; }
+
+.frontHero {
+  width: 100%; }
+
+.frontHero h1 {
+  position: absolute;
+  font-weight: 800;
+  font-size: 42px;
+  line-height: 58px;
+  letter-spacing: -0.21px;
+  color: #ffffff;
+  margin-left: 10%;
+  margin-top: -21%; }
+
+.frontHero img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: auto;
+  background-size: cover; }

@@ -8,10 +8,12 @@
 //  Import CSS.
 import './editor.scss';
 import './style.scss';
-
+import attributes from './attributes';
+import FrontHero from './components/FrontHero';
+import Inspector from './components/Inspector';
 const { __ } = wp.i18n; // Import __() from wp.i18n
 const { registerBlockType } = wp.blocks; // Import registerBlockType() from wp.blocks
-
+const { Fragment } = wp.element;
 /**
  * Register: aa Gutenberg Block.
  *
@@ -25,17 +27,21 @@ const { registerBlockType } = wp.blocks; // Import registerBlockType() from wp.b
  * @return {?WPBlock}          The block, if it has been successfully
  *                             registered; otherwise `undefined`.
  */
-registerBlockType( 'cgb/block-glorify-blocks', {
+registerBlockType( 'glorify-blocks/front-hero', {
 	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
-	title: __( 'glorify-blocks - CGB Block' ), // Block title.
+	title: __( 'glorify-blocks - Front Hero' ), // Block title.
 	icon: 'shield', // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
 	category: 'common', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
 	keywords: [
-		__( 'glorify-blocks — CGB Block' ),
-		__( 'CGB Example' ),
-		__( 'create-guten-block' ),
+		__( 'glorify-blocks' ),
+		__( 'Hero' ),
+		__( 'About us' ),
 	],
-
+	supports: {
+		reusable: false,
+		align: [ 'full' ]
+	},
+	attributes: attributes,
 	/**
 	 * The edit function describes the structure of your block in the context of the editor.
 	 * This represents what the editor will render when the block is used.
@@ -50,20 +56,13 @@ registerBlockType( 'cgb/block-glorify-blocks', {
 	edit: ( props ) => {
 		// Creates a <p class='wp-block-cgb-block-glorify-blocks'></p>.
 		return (
-			<div className={ props.className }>
-				<p>— Hello from the backend.</p>
-				<p>
-					CGB BLOCK: <code>glorify-blocks</code> is a new Gutenberg block
-				</p>
-				<p>
-					It was created via{ ' ' }
-					<code>
-						<a href="https://github.com/ahmadawais/create-guten-block">
-							create-guten-block
-						</a>
-					</code>.
-				</p>
-			</div>
+			<Fragment>
+				<Inspector {...props} />
+				<FrontHero 
+					{...props}
+					editor={true}
+				/>
+			</Fragment>
 		);
 	},
 
@@ -80,20 +79,7 @@ registerBlockType( 'cgb/block-glorify-blocks', {
 	 */
 	save: ( props ) => {
 		return (
-			<div className={ props.className }>
-				<p>— Hello from the frontend.</p>
-				<p>
-					CGB BLOCK: <code>glorify-blocks</code> is a new Gutenberg block.
-				</p>
-				<p>
-					It was created via{ ' ' }
-					<code>
-						<a href="https://github.com/ahmadawais/create-guten-block">
-							create-guten-block
-						</a>
-					</code>.
-				</p>
-			</div>
+			<FrontHero {...props} />
 		);
 	},
 } );
