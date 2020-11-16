@@ -341,3 +341,66 @@
       font-size: 18px;
       margin-top: 3px;
       line-height: 30px; } }
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+.glorify-container {
+  max-width: 1140px;
+  margin: 0px auto; }
+
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+.content .content__row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin-top: 90px; }
+  .content .content__row .content__image {
+    width: 45%; }
+  .content .content__row .content__description {
+    width: 55%; }
+    .content .content__row .content__description h2 {
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 24px;
+      letter-spacing: -0.21px;
+      text-transform: uppercase;
+      color: #6775F8; }
+    .content .content__row .content__description p {
+      margin-top: 30px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: -0.21px;
+      color: #9DA2B3; }
+
+.content .flex-reverse {
+  -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse; }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 770px) {
+  .content {
+    margin-top: 15px;
+    padding: 10px; }
+    .content .content__row {
+      -ms-flex-direction: column;
+          flex-direction: column;
+      margin-top: 5px; }
+      .content .content__row .content__image {
+        width: 100%; }
+        .content .content__row .content__image img {
+          width: 100%; }
+      .content .content__row .content__description {
+        text-align: center;
+        width: 100%;
+        margin-top: 10px; } }

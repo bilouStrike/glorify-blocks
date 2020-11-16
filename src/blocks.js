@@ -13,3 +13,4 @@ import './FrontHero';
 import './TextInfoBox';
 import './InfoBox';
 import './Counter';
+import './Content';
