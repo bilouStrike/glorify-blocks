@@ -1,0 +1,45 @@
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+
+ .infoBox {
+    display: flex;
+    max-width: 1140px;
+    margin: 0 auto;
+    text-align: left;
+    justify-content: space-between;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-top: 95px;
+    & .infoBox__text_column {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        width: 60%;
+
+        & .textInfoBox {
+            padding-top: 0;
+        }
+
+        & .textInfoBox__title {
+            text-align:left;
+            margin-top: 0px;
+        }
+
+        & .textInfoBox__sub_title {
+            text-align:left;
+        }
+
+        & .textInfoBox__description {
+            text-align:left;
+        }
+    }
+
+    & .infoBox__image_column {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+    }
+ }

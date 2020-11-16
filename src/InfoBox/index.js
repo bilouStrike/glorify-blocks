@@ -9,7 +9,7 @@
 import './editor.scss';
 import './style.scss';
 import attributes from './attributes';
-import TextInfoBox from './components/TextInfoBox';
+import InfoBox from './components/InfoBox';
 
 const { __ } = wp.i18n; // Import __() from wp.i18n
 const { registerBlockType } = wp.blocks; // Import registerBlockType() from wp.blocks
@@ -27,9 +27,9 @@ const { Fragment } = wp.element;
  * @return {?WPBlock}          The block, if it has been successfully
  *                             registered; otherwise `undefined`.
  */
-registerBlockType( 'glorify-blocks/text-info-box', {
+registerBlockType( 'glorify-blocks/info-box', {
 	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
-	title: __( 'glorify-blocks - Text InfoBox' ), // Block title.
+	title: __( 'glorify-blocks - InfoBox' ), // Block title.
 	icon: 'shield', // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
 	category: 'Glorify', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
 	keywords: [
@@ -37,7 +37,7 @@ registerBlockType( 'glorify-blocks/text-info-box', {
 		__( 'infobox' ),
 	],
 	supports: {
-		reusable: false,
+		reusable: true,
 		align: [ 'full' ]
 	},
 	attributes: attributes,
@@ -56,7 +56,7 @@ registerBlockType( 'glorify-blocks/text-info-box', {
 		// Creates a <p class='wp-block-cgb-block-glorify-blocks'></p>.
 		return (
 			<Fragment>
-				<TextInfoBox 
+				<InfoBox 
 					{...props}
 					editor={true}
 				/>
@@ -77,7 +77,7 @@ registerBlockType( 'glorify-blocks/text-info-box', {
 	 */
 	save: ( props ) => {
 		return (
-			<TextInfoBox {...props} />
+			<InfoBox {...props} />
 		);
 	},
 } );

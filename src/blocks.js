@@ -10,4 +10,5 @@
  */
 
 import './FrontHero';
-import './TextInfoBox'
+import './TextInfoBox';
+import './InfoBox';
