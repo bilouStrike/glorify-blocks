@@ -4,6 +4,10 @@
  * Can include things like variables and mixins
  * that are used across the project.
 */
+.glorify-container {
+  max-width: 1140px;
+  margin: 0px auto; }
+
 /**
  * #.# Editor Styles
  *
@@ -30,6 +34,10 @@ body div .block-editor-block-list__layout > div[data-type="glorify-blocks/front-
  * Can include things like variables and mixins
  * that are used across the project.
 */
+.glorify-container {
+  max-width: 1140px;
+  margin: 0px auto; }
+
 /**
  * #.# Editor Styles
  *
@@ -46,6 +54,26 @@ body div .block-editor-block-list__layout > div[data-type^="glorify-blocks"] {
  * Can include things like variables and mixins
  * that are used across the project.
 */
+.glorify-container {
+  max-width: 1140px;
+  margin: 0px auto; }
+
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+.glorify-container {
+  max-width: 1140px;
+  margin: 0px auto; }
+
 /**
  * #.# Editor Styles
  *

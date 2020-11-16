@@ -4,14 +4,15 @@
  * Can include things like variables and mixins
  * that are used across the project.
 */
+.glorify-container {
+  max-width: 1140px;
+  margin: 0px auto; }
+
 /**
  * #.# Styles
  *
  * CSS for both Frontend+Backend.
  */
-.glorify-container {
-  max-width: 1140px; }
-
 .frontHero {
   width: 100%; }
 
@@ -37,6 +38,10 @@
  * Can include things like variables and mixins
  * that are used across the project.
 */
+.glorify-container {
+  max-width: 1140px;
+  margin: 0px auto; }
+
 /**
  * #.# Styles
  *
@@ -97,6 +102,10 @@
  * Can include things like variables and mixins
  * that are used across the project.
 */
+.glorify-container {
+  max-width: 1140px;
+  margin: 0px auto; }
+
 /**
  * #.# Styles
  *
@@ -158,3 +167,177 @@
     margin-top: 30px;
     padding-right: 25px;
     padding-left: 25px; } }
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+.glorify-container {
+  max-width: 1140px;
+  margin: 0px auto; }
+
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+.counter {
+  background: #091640;
+  text-align: center;
+  padding-top: 120px;
+  background-image: url("http://127.0.0.1/glorify/wp-content/uploads/2020/11/footer_bg.png");
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-size: contain; }
+  .counter .counter__title {
+    font-weight: 800;
+    font-size: 42px;
+    line-height: 58px;
+    text-align: center;
+    letter-spacing: -0.21px;
+    color: #EDEDED; }
+  .counter .counter__data {
+    padding: 0px 70px; }
+    .counter .counter__data .counter__data_title {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+      letter-spacing: -0.21px;
+      color: #9DA2B3;
+      margin-top: 60px; }
+    .counter .counter__data .counter__data_grids {
+      margin-top: 40px;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+      .counter .counter__data .counter__data_grids .counter__data_set {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        width: 175px;
+        height: 180px;
+        background: #2b365a;
+        border-radius: 12px; }
+        .counter .counter__data .counter__data_grids .counter__data_set--purple {
+          background-color: #17245c; }
+          .counter .counter__data .counter__data_grids .counter__data_set--purple span {
+            color: #6775F8; }
+        .counter .counter__data .counter__data_grids .counter__data_set--pink {
+          background-color: #2a164b; }
+          .counter .counter__data .counter__data_grids .counter__data_set--pink span {
+            color: #e8138c; }
+        .counter .counter__data .counter__data_grids .counter__data_set--yellow {
+          background-color: #2d3046; }
+          .counter .counter__data .counter__data_grids .counter__data_set--yellow span {
+            color: #f7c465; }
+        .counter .counter__data .counter__data_grids .counter__data_set--cyan {
+          background-color: #08365b; }
+          .counter .counter__data .counter__data_grids .counter__data_set--cyan span {
+            color: #01dfe9; }
+        .counter .counter__data .counter__data_grids .counter__data_set--green {
+          background-color: #16394f; }
+          .counter .counter__data .counter__data_grids .counter__data_set--green span {
+            color: #63ffa5; }
+      .counter .counter__data .counter__data_grids .counter__data_number {
+        font-weight: 600;
+        font-size: 75px;
+        line-height: 91px;
+        text-align: center;
+        letter-spacing: -0.21px;
+        color: #ffffff;
+        margin-top: 26px; }
+        .counter .counter__data .counter__data_grids .counter__data_number--beak-size {
+          font-size: 58px; }
+      .counter .counter__data .counter__data_grids .counter__data_text {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: -0.21px;
+        color: #ffffff;
+        margin-top: 12px; }
+  .counter .counter__footer {
+    margin-top: 65px;
+    padding-bottom: 290px; }
+    .counter .counter__footer p {
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 34px;
+      text-align: center;
+      letter-spacing: -0.21px;
+      color: #EDEDED;
+      text-align: center; }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 768px) {
+  .counter {
+    padding-top: 20px; }
+    .counter .counter__title {
+      font-size: 24px;
+      line-height: 20px; }
+    .counter .counter__data {
+      padding: 0px 15px;
+      margin-top: 25px; }
+      .counter .counter__data .counter__data_title {
+        margin-top: 15px;
+        font-size: 16px; }
+      .counter .counter__data .counter__data_grids {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        margin-top: 0px; }
+        .counter .counter__data .counter__data_grids .counter__data_set {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-direction: column;
+              flex-direction: column;
+          width: 45%;
+          height: 80px;
+          background: #2b365a;
+          border-radius: 12px;
+          margin-top: 15px; }
+          .counter .counter__data .counter__data_grids .counter__data_set--sm-device {
+            width: 100%; }
+        .counter .counter__data .counter__data_grids .counter__data_number {
+          font-size: 28px;
+          margin-top: 19px;
+          line-height: 20px; }
+          .counter .counter__data .counter__data_grids .counter__data_number--beak-size {
+            font-size: 24px; }
+        .counter .counter__data .counter__data_grids .counter__data_text {
+          font-size: 14px;
+          margin-top: 3px;
+          line-height: 20px; }
+    .counter .counter__footer {
+      padding-bottom: 120px; }
+      .counter .counter__footer p {
+        font-size: 20px;
+        line-height: 26px; } }
+
+@media only screen and (min-width: 728px) and (max-width: 1140px) {
+  .counter .counter__data .counter__data_grids {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 0px; }
+    .counter .counter__data .counter__data_grids .counter__data_set {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      width: 120px;
+      height: 160px;
+      background: #2b365a;
+      border-radius: 12px; }
+    .counter .counter__data .counter__data_grids .counter__data_number {
+      font-size: 38px;
+      margin-top: 19px;
+      line-height: 60px; }
+      .counter .counter__data .counter__data_grids .counter__data_number--beak-size {
+        font-size: 24px; }
+    .counter .counter__data .counter__data_grids .counter__data_text {
+      font-size: 18px;
+      margin-top: 3px;
+      line-height: 30px; } }

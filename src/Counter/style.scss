@@ -1,0 +1,214 @@
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+
+ .counter {
+    background: #091640;
+    text-align: center;
+    padding-top: 120px;
+    background-image: url('http://127.0.0.1/glorify/wp-content/uploads/2020/11/footer_bg.png');
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size: contain;
+
+    & .counter__title {
+        font-weight: 800;
+        font-size: 42px;
+        line-height: 58px;
+        text-align: center;
+        letter-spacing: -0.21px;
+        color: #EDEDED;
+    }
+
+    & .counter__data {
+        padding: 0px 70px;
+
+        & .counter__data_title {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            letter-spacing: -0.21px;
+            color: #9DA2B3;
+            margin-top: 60px;
+        }
+
+        & .counter__data_grids {
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+
+            & .counter__data_set {
+                display: flex;
+                flex-direction: column;
+                width: 175px;
+                height: 180px;
+                background: #2b365a;
+                border-radius: 12px;
+                &--purple {
+                    background-color: #17245c;
+                    & span  {
+                        color: #6775F8;
+                    }
+                }
+                &--pink {
+                    background-color: #2a164b;
+                    & span {
+                        color:#e8138c;
+                    }
+                }
+                &--yellow {
+                    background-color: #2d3046;
+                    & span {
+                        color:#f7c465;
+                    }
+                }
+                &--cyan {
+                    background-color: #08365b;
+                    & span {
+                        color:#01dfe9;
+                    }
+                }
+                &--green {
+                    background-color: #16394f;
+                    & span {
+                        color:#63ffa5;
+                    }
+                }
+            }
+
+            & .counter__data_number {
+                font-weight: 600;
+                font-size: 75px;
+                line-height: 91px;
+                text-align: center;
+                letter-spacing: -0.21px;
+                color: #ffffff;
+                margin-top: 26px;
+
+                &--beak-size {
+                    font-size: 58px;
+                }
+            }
+
+            & .counter__data_text {
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 24px;
+                text-align: center;
+                letter-spacing: -0.21px;
+                color: #ffffff;
+                margin-top: 12px;
+            }
+        }
+    }
+
+    & .counter__footer {
+        margin-top: 65px;
+        padding-bottom: 290px;
+        & p {
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 34px;
+            text-align: center;
+            letter-spacing: -0.21px;
+            color: #EDEDED;
+            text-align: center;
+        }
+    }
+}  
+
+ /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 768px) {
+    .counter {
+        padding-top: 20px;
+        & .counter__title {
+            font-size: 24px;
+            line-height: 20px;
+        }
+
+        & .counter__data {
+            padding: 0px 15px;
+            margin-top: 25px;
+            & .counter__data_title {
+                margin-top: 15px;
+                font-size: 16px;
+            }
+
+            & .counter__data_grids {
+                flex-wrap: wrap;
+                margin-top: 0px;
+                & .counter__data_set {
+                    display: flex;
+                    flex-direction: column;
+                    width: 45%;
+                    height: 80px;
+                    background: #2b365a;
+                    border-radius: 12px;
+                    margin-top: 15px;
+
+                    &--sm-device {
+                        width: 100%;
+                    }
+                }
+
+                & .counter__data_number {
+                    font-size: 28px;
+                    margin-top: 19px;
+                    line-height: 20px;
+                    &--beak-size {
+                        font-size: 24px;
+                    }
+                }
+                & .counter__data_text {
+                    font-size: 14px;
+                    margin-top: 3px;
+                    line-height: 20px;
+                }
+            }
+        }
+
+        & .counter__footer {
+            padding-bottom: 120px;
+            & p {
+                font-size: 20px;
+                line-height: 26px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 728px) and (max-width: 1140px) {
+    .counter {
+        & .counter__data {
+            & .counter__data_grids {
+                flex-wrap: wrap;
+                margin-top: 0px;
+                & .counter__data_set {
+                    display: flex;
+                    flex-direction: column;
+                    width: 120px;
+                    height: 160px;
+                    background: #2b365a;
+                    border-radius: 12px;
+                }
+
+                & .counter__data_number {
+                    font-size: 38px;
+                    margin-top: 19px;
+                    line-height: 60px;
+                    &--beak-size {
+                        font-size: 24px;
+                    }
+                }
+                & .counter__data_text {
+                    font-size: 18px;
+                    margin-top: 3px;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+}
