@@ -10,3 +10,4 @@
  */
 
 import './FrontHero';
+import './TextInfoBox'

@@ -1,0 +1,44 @@
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+.textInfoBox {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 72px;
+    & .textInfoBox__title {
+        line-height: 24px;
+        letter-spacing: -0.21px;
+        text-transform: uppercase;
+        color: #6775F8;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 0px;
+    }
+
+    & .textInfoBox__sub_title {
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 44px;
+        text-align: center;
+        letter-spacing: -0.21px;
+        color: #091640;
+        margin-bottom: 0px;
+        margin-top: 30px;
+    }
+
+    & .textInfoBox__description {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+        letter-spacing: -0.21px;
+        color: #9DA2B3;
+        margin-top: 30px;
+    }
+}
