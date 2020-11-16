@@ -78,6 +78,19 @@
     letter-spacing: -0.21px;
     color: #9DA2B3;
     margin-top: 30px; }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .textInfoBox {
+    margin-top: 15px;
+    padding: 0px 10px; }
+    .textInfoBox .textInfoBox__title {
+      font-size: 16px; }
+    .textInfoBox .textInfoBox__sub_title {
+      font-size: 20px;
+      line-height: 24px; }
+    .textInfoBox .textInfoBox__description {
+      font-size: 14px; } }
 /**
  * #.# Common SCSS
  *
@@ -122,3 +135,26 @@
     -ms-flex-direction: column;
         flex-direction: column;
     width: 30%; }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .infoBox {
+    margin-top: 0px;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+    .infoBox .infoBox__text_column {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      text-align: left;
+      width: 100%; }
+    .infoBox .infoBox__image_column {
+      width: 100%;
+      padding: 10px; } }
+
+@media only screen and (min-width: 600px) and (max-width: 1140px) {
+  .infoBox {
+    margin-top: 30px;
+    padding-right: 25px;
+    padding-left: 25px; } }

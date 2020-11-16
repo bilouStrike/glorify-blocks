@@ -42,3 +42,24 @@
         margin-top: 30px;
     }
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .textInfoBox {
+        margin-top: 15px;
+        padding: 0px 10px;
+
+        & .textInfoBox__title {
+            font-size: 16px;
+        }
+    
+        & .textInfoBox__sub_title {
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        & .textInfoBox__description {
+            font-size: 14px;
+        }
+    }
+}

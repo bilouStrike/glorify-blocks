@@ -43,3 +43,30 @@
         width: 30%;
     }
  }
+
+ /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .infoBox {
+        margin-top: 0px;
+        flex-direction: column;
+        & .infoBox__text_column {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            width: 100%;
+        }
+
+        & .infoBox__image_column {
+            width: 100%;
+            padding: 10px;
+        }
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1140px) {
+    .infoBox {
+        margin-top: 30px;
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+}
