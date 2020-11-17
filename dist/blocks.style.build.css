@@ -310,7 +310,10 @@
       text-align: center;
       letter-spacing: -0.21px;
       color: #EDEDED;
-      text-align: center; }
+      text-align: center;
+      margin-bottom: 0px; }
+    .counter .counter__footer img {
+      margin-top: 32px; }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 768px) {
