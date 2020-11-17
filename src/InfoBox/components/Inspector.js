@@ -15,7 +15,7 @@ const Inspector = (props) => {
 
     return (
         <InspectorControls>
-            <PanelBody title="Icon" initialOpen={true}>
+            <PanelBody title="Image" initialOpen={true}>
                 <img src={image}/><br/>
                 <MediaUpload
                     onSelect={(imgObject) => setAttributes({image: imgObject.sizes.full.url}) }

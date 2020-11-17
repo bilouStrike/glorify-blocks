@@ -32,6 +32,20 @@
   width: 100%;
   height: auto;
   background-size: cover; }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .frontHero h1 {
+    font-size: 18px;
+    line-height: 22px;
+    margin-left: 40%;
+    margin-top: -39%; } }
+
+@media only screen and (min-width: 600px) and (max-width: 1140px) {
+  .frontHero h1 {
+    font-size: 32px;
+    line-height: 30px;
+    margin-left: 5%; } }
 /**
  * #.# Common SCSS
  *
@@ -142,8 +156,7 @@
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
-        flex-direction: column;
-    width: 30%; }
+        flex-direction: column; }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -156,17 +169,43 @@
       display: flex;
       -ms-flex-direction: column;
           flex-direction: column;
-      text-align: left;
       width: 100%; }
+      .infoBox .infoBox__text_column .textInfoBox__title {
+        text-align: center;
+        margin-top: 0px; }
+      .infoBox .infoBox__text_column .textInfoBox__sub_title {
+        text-align: center; }
+      .infoBox .infoBox__text_column .textInfoBox__description {
+        text-align: center; }
     .infoBox .infoBox__image_column {
-      width: 100%;
-      padding: 10px; } }
+      width: 100%; } }
 
 @media only screen and (min-width: 600px) and (max-width: 1140px) {
   .infoBox {
     margin-top: 30px;
     padding-right: 25px;
-    padding-left: 25px; } }
+    text-align: center;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+    .infoBox .infoBox__text_column {
+      padding-left: 25px;
+      width: 100%; }
+      .infoBox .infoBox__text_column .textInfoBox__title {
+        text-align: center;
+        margin-top: 0px; }
+      .infoBox .infoBox__text_column .textInfoBox__sub_title {
+        text-align: center; }
+      .infoBox .infoBox__text_column .textInfoBox__description {
+        text-align: center; }
+    .infoBox .infoBox__image_column {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center; }
+      .infoBox .infoBox__image_column img {
+        width: 80%; } }
 /**
  * #.# Common SCSS
  *
@@ -186,7 +225,8 @@
   background: #091640;
   text-align: center;
   padding-top: 120px;
-  background-image: url("http://127.0.0.1/glorify/wp-content/uploads/2020/11/footer_bg.png");
+  margin-top: 90px;
+  background-image: url("https://www.glorifyapp.com/wp-content/uploads/2020/11/footer_bg.png");
   background-repeat: no-repeat;
   background-position-y: bottom;
   background-size: contain; }
@@ -275,7 +315,8 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 768px) {
   .counter {
-    padding-top: 20px; }
+    padding-top: 20px;
+    margin-top: 10px; }
     .counter .counter__title {
       font-size: 24px;
       line-height: 20px; }
@@ -318,29 +359,31 @@
         line-height: 26px; } }
 
 @media only screen and (min-width: 728px) and (max-width: 1140px) {
-  .counter .counter__data .counter__data_grids {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin-top: 0px; }
-    .counter .counter__data .counter__data_grids .counter__data_set {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-direction: column;
-          flex-direction: column;
-      width: 120px;
-      height: 160px;
-      background: #2b365a;
-      border-radius: 12px; }
-    .counter .counter__data .counter__data_grids .counter__data_number {
-      font-size: 38px;
-      margin-top: 19px;
-      line-height: 60px; }
-      .counter .counter__data .counter__data_grids .counter__data_number--beak-size {
-        font-size: 24px; }
-    .counter .counter__data .counter__data_grids .counter__data_text {
-      font-size: 18px;
-      margin-top: 3px;
-      line-height: 30px; } }
+  .counter {
+    margin-top: 10px; }
+    .counter .counter__data .counter__data_grids {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      margin-top: 0px; }
+      .counter .counter__data .counter__data_grids .counter__data_set {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        width: 120px;
+        height: 160px;
+        background: #2b365a;
+        border-radius: 12px; }
+      .counter .counter__data .counter__data_grids .counter__data_number {
+        font-size: 38px;
+        margin-top: 19px;
+        line-height: 60px; }
+        .counter .counter__data .counter__data_grids .counter__data_number--beak-size {
+          font-size: 24px; }
+      .counter .counter__data .counter__data_grids .counter__data_text {
+        font-size: 18px;
+        margin-top: 3px;
+        line-height: 30px; } }
 /**
  * #.# Common SCSS
  *

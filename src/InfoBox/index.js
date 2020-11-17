@@ -10,6 +10,7 @@ import './editor.scss';
 import './style.scss';
 import attributes from './attributes';
 import InfoBox from './components/InfoBox';
+import Inspector from './components/Inspector';
 
 const { __ } = wp.i18n; // Import __() from wp.i18n
 const { registerBlockType } = wp.blocks; // Import registerBlockType() from wp.blocks
@@ -56,6 +57,7 @@ registerBlockType( 'glorify-blocks/info-box', {
 		// Creates a <p class='wp-block-cgb-block-glorify-blocks'></p>.
 		return (
 			<Fragment>
+				<Inspector {...props} />
 				<InfoBox 
 					{...props}
 					editor={true}

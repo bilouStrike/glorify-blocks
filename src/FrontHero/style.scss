@@ -24,3 +24,21 @@
     height: auto;
     background-size: cover;
 }
+
+ /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .frontHero h1 {
+        font-size: 18px;
+        line-height: 22px;
+        margin-left: 40%;
+        margin-top: -39%;
+    } 
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1140px) {
+    .frontHero h1 {
+        font-size: 32px;
+        line-height: 30px;
+        margin-left: 5%;
+    }
+}

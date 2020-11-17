@@ -8,7 +8,8 @@
     background: #091640;
     text-align: center;
     padding-top: 120px;
-    background-image: url('http://127.0.0.1/glorify/wp-content/uploads/2020/11/footer_bg.png');
+    margin-top: 90px;
+    background-image: url('https://www.glorifyapp.com/wp-content/uploads/2020/11/footer_bg.png');
     background-repeat: no-repeat;
     background-position-y: bottom;
     background-size: contain;
@@ -124,6 +125,7 @@
 @media only screen and (max-width: 768px) {
     .counter {
         padding-top: 20px;
+        margin-top: 10px;
         & .counter__title {
             font-size: 24px;
             line-height: 20px;
@@ -182,6 +184,7 @@
 
 @media only screen and (min-width: 728px) and (max-width: 1140px) {
     .counter {
+        margin-top: 10px;
         & .counter__data {
             & .counter__data_grids {
                 flex-wrap: wrap;
